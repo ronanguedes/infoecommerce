@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>dados do formulario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- ---------------------------------texto CSS ------------------------------------------->
+  <style>
+    .row {
+      display: flex;
+      display: block;
+    }
+/* ---------------------------------tabela CSS ------------------------------------------->*/
+body {
+      
+  height: 100%; /* Isso garante que a imagem ocupe toda a altura da tela */
+  background-image: url(eco.webp);
+  background-size: cover; /* Isso garante que a imagem cubra toda a área disponível */
+  background-position: center; /* Isso garante que a imagem esteja centralizada */
+}
+.table {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 é a opacidade, ajuste conforme necessário */
+  padding: 10px; /* Ajuste o preenchimento conforme necessário */
+  border-radius: 5px; /* Adicione bordas arredondadas conforme necessário */
+}
+.card{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+ /* ---------------------------------texto CSS ------------------------------------------->*/
+ .titulocurriculo{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+ }
+ /* ---------------------------------texto CSS ------------------------------------------->*/  
+ .bottonselect{
+
+    top:15%;
+    text-align: center;
+ }
+ /*<!-- --------------------------------- CSS ------------------------------------------->*/
+ .footer{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        
+ }
+ .content {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ iframe {
+      width: 100%;
+      height: 100vh;              /* Altura ajustável */
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      background-color: white;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <!-- ---------------------------------navbar HTML parte soperior da pagina ------------------------------------------->
+<!-- Image and text -->
+
+<!-- ---------------------------------texto titulo HTML ------------------------------------------->
+<div class="containerCurriculo">
+    
+<!-- --------------------8888888------------------------------------------------------->
+<section class="content">
+  <div class="table">
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Dados do Formulário</h3>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          
+            <div class="card-body">
+              
+              
+              <!-- <br>
+              <label>Decision Tree</label>
+              <img src="decision.PNG" width="350px" height="100px">
+              <br>
+              <br>
+              <label> k Nearest Neighbor</label>
+              <img src="knearest.PNG" width="350px" height="100px">
+              <br>
+              <br>
+              <label>SVM Learner</label>
+              <img src="learner.PNG" width="350px" height="100px">
+              <br>-->
+              
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+            <button type="button" class="btn btn-danger" onclick="window.location.href='trabalho2.html'">Voltar</button>
+            <button type="button" class="btn btn-info" onclick="window.location.href='trabalho4.html'">Próximo</button>
+            </div>
+            
+          
+        </div>
+        <!-- /.card -->
+
+        
+
+
+      </div>
+      <!--/.col (left) -->
+      <!-- right column -->
+      
+      <!--/.col (right) -->
+    </div>
+    <!-- /.row -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- ---------------------88888888888------------------------------------------------------>
+    <iframe src="plataforma.pdf"></iframe>
+    
+    <!-- ---------------------------------texto HTML -------------------------------------------> 
+
+</div>
+
+<!-- ---------------------------------footer HTML parte inferior da pagina------------------------------------------->
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+  var voltar = document.getElementById("voltar");
+  var proximo = document.getElementById("proximo");
+  voltar.onclick = function() {
+    window.location.href = "trabalhoTela2.html";
+  };
+
+  proximo.onclick = function() {
+    window.location.href = "trabalhoTela4.html";
+  };
+  </script>
+
+</html>

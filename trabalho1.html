@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>sobre</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- ---------------------------------texto CSS ------------------------------------------->
+  <style>
+    .row {
+      display: flex;
+      display: block;
+    }
+/* ---------------------------------tabela CSS ------------------------------------------->*/
+body {
+      
+  height: 100%; /* Isso garante que a imagem ocupe toda a altura da tela */
+  background-image: url(ec.png);
+  background-size: cover; /* Isso garante que a imagem cubra toda a área disponível */
+  background-position: center; /* Isso garante que a imagem esteja centralizada */
+}
+.table {
+  text-align: center;
+  width: 80%;
+  transform: translate(15%, 20%);
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 é a opacidade, ajuste conforme necessário */
+  padding: 10px; /* Ajuste o preenchimento conforme necessário */
+  border-radius: 5px; /* Adicione bordas arredondadas conforme necessário */
+}
+.card{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+ /* ---------------------------------texto CSS ------------------------------------------->*/
+ .titulocurriculo{
+  top: 10%;
+    text-align: center;
+ }
+ /* ---------------------------------texto CSS ------------------------------------------->*/  
+ .bottonselect{
+
+    top:15%;
+    text-align: center;
+ }
+ /*<!-- --------------------------------- CSS ------------------------------------------->*/
+ .footer{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        
+ }
+ .content {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#loja{
+  display: flex;
+  justify-content: center; /* centraliza os botões na horizontal */
+  gap: 10px; /* espaçamento entre os botões */
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+
+}
+ 
+  </style>
+  
+</head>
+
+<body>
+  <!-- ---------------------------------navbar HTML parte soperior da pagina ------------------------------------------->
+<!-- Image and text -->
+ <!--<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+     <img src="ia.png" width="30" height="30" class="d-inline-block align-top" alt=""> 
+    Trabalho Inteligencia de Negocios
+  </a>
+</nav> -->
+<!-- ---------------------------------texto titulo HTML ------------------------------------------->
+<div class="containerCurriculo">
+    <div class="titulo">
+      <div class="titulocurriculo">
+         
+      </div>
+    </div>
+<!-- --------------------8888888------------------------------------------------------->
+<section class="content">
+  <div class="table">
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Conjunto de dados</h4>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          
+            <div class="card-body">
+              <b>(Americanas)</b> é uma das maiores varejistas do Brasil, com forte presença tanto online quanto física.
+              <br>
+              <b>(Magalu)</b> é uma gigante do varejo brasileiro que se destacou pela transformação digital de suas lojas físicas.
+              <br>
+              
+              <b>(AliExpress)</b> é uma plataforma global de comércio eletrônico pertencente ao grupo Alibaba, da China. 
+              <br>
+              
+              <b>(Amazon)</b> é uma das maiores empresas de tecnologia e varejo do mundo. No Brasil, vem expandindo sua operação desde 2012, oferecendo desde livros até eletrônicos e itens de supermercado. 
+              <br>
+              <b>(Mercado)</b> Livre é a principal plataforma de e-commerce da América Latina, com sede na Argentina e forte presença no Brasil.
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+            <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Voltar</button>
+            <button type="button" class="btn btn-info" onclick="window.location.href='trabalho2.html'">Próximo</button>
+            </div>
+
+
+           
+        <!-- /.card -->
+             <div id="loja" class="card-footer">
+             <button onclick="mostrarImagem('americanas')" class="btn btn-success">Americanas</button>
+             <button onclick="mostrarImagem('magalu')" class="btn btn-success">Magalu</button>
+            <button onclick="mostrarImagem('aliexpress')" class="btn btn-success">Aliexpress</button>
+            <button onclick="mostrarImagem('amazon')" class="btn btn-success">Amazon</button>
+            <button onclick="mostrarImagem('mercadolivre')" class="btn btn-success">Mercado Livre</button>
+            </div>
+        </div>
+
+<div class="bottonselect">
+      <h1 id="result2"></h1>
+    </div>
+        
+
+
+      </div>
+      <!--/.col (left) -->
+      <!-- right column -->
+      
+      <!--/.col (right) -->
+    </div>
+    <!-- /.row -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- ---------------------88888888888------------------------------------------------------>
+    
+    
+    <!-- ---------------------------------texto HTML -------------------------------------------> 
+
+</div>
+
+<!-- ---------------------------------footer HTML parte inferior da pagina------------------------------------------->
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<script>
+  var voltar = document.getElementById("voltar");
+  var proximo = document.getElementById("proximo");
+  voltar.onclick = function() {
+    window.location.href = "index.html";
+  };
+
+  proximo.onclick = function() {
+    window.location.href = "trabalhoTela2.html";
+  };
+  </script>-->
+<!--  <script>
+    // Armazena as lojas já exibidas
+    const exibidas = new Set();
+
+    function mostrarImagem(loja) {
+      // Se a loja já foi exibida, não faz nada
+      if (exibidas.has(loja)) return;
+
+      let nome = "";
+      let imagem = "";
+
+      if (loja === "americanas") {
+        nome = "Americanas";
+        imagem = "americanas.webp";
+      } else if (loja === "magalu") {
+        nome = "Magalu";
+        imagem = "magalu.webp";
+      } else if (loja === "aliexpress") {
+        nome = "Aliexpress";
+        imagem = "aliexpress.webp";
+      } else if (loja === "amazon") {
+        nome = "Amazon";
+        imagem = "amazon.webp";
+      }
+
+      // Cria um novo bloco HTML com o nome e imagem
+      const novoItem = document.createElement("div");
+      novoItem.innerHTML = `${nome}<br><img width="20%" height="20%" src="${imagem}"><br>`;
+      
+      // Adiciona ao container
+      document.getElementById("result2").appendChild(novoItem);
+
+      // Marca a loja como exibida
+      exibidas.add(loja);
+    }
+  </script>-->
+  <script>
+  function mostrarImagem(loja) {
+    let nome = "";
+    let imagem = "";
+
+    if (loja === "americanas") {
+      nome = "Americanas";
+      imagem = "americanas.webp";
+    } else if (loja === "magalu") {
+      nome = "Magalu";
+      imagem = "magalu.webp";
+    } else if (loja === "aliexpress") {
+      nome = "Aliexpress";
+      imagem = "aliexpress.webp";
+    } else if (loja === "amazon") {
+      nome = "Amazon";
+      imagem = "amazon.webp";
+    } else if (loja === "mercadolivre") {
+      nome = "Mercado Livre";
+      imagem = "mercadolivre.webp";
+    }
+
+    // Cria um novo bloco HTML com o nome e imagem
+    const novoItem = `<div>${nome}<br><img width="100%" height="100%" src="${imagem}"><br></div>`;
+
+    // Substitui o conteúdo atual com o novo item
+    document.getElementById("result2").innerHTML = novoItem;
+  }
+</script>
+
+
+
+</html>
